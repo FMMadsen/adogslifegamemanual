@@ -93,6 +93,7 @@ function defaultTask(cb) {
     console.log('Running default task for Gulp');
     console.log('Possible gulp tasks');
     console.log(' - build');
+    console.log(' - serve');
     console.log('Or specific tasks Possible gulp tasks');
     console.log(' - clean');
     console.log(' - styles');
@@ -102,7 +103,7 @@ function defaultTask(cb) {
 
 exports.default = defaultTask;
 exports.build = series(cleanDist, parallel(generateHtml, transpileSass, copyStaticFiles));
-exports.webserver = startWebserver;
+exports.serve = startWebserver;
 exports.clean = cleanDist;
 exports.styles = transpileSass;
 exports.html = generateHtml;
