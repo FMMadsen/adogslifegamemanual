@@ -1,0 +1,62 @@
+header .page {
+  height: 70em;
+  background-image: url("/img/0-page-background-frontpage.jpg");
+}
+header .feature-row {
+  margin-top: 48em;
+}
+header .feature-text-main {
+  font-size: 2.4em;
+  font-weight: 800;
+  line-height: 1em;
+  text-align: center;
+  display: block;
+}
+header .feature-text-sub {
+  font-size: 1.1em;
+  font-weight: 800;
+  line-height: 1em;
+  text-align: center;
+  display: block;
+}
+header .credit {
+  font-size: 0.8em;
+  font-weight: 800;
+  line-height: 1em;
+  text-align: right;
+}
+
+@media all and (max-width: 48em) {
+  header .page {
+    height: 62em;
+  }
+  header .feature-row {
+    margin-top: 44em;
+  }
+  header .feature-text-main {
+    font-size: 2.5em;
+  }
+  header .feature-text-sub {
+    font-size: 1em;
+  }
+  header .credit {
+    font-size: 1em;
+  }
+}
+@media all and (max-width: 36em) {
+  header .page {
+    height: 34em;
+  }
+  header .feature-row {
+    margin-top: 24em;
+  }
+  header .feature-text-main {
+    font-size: 1.5em;
+  }
+  header .feature-text-sub {
+    font-size: 0.7em;
+  }
+  header .credit {
+    font-size: 0.5em;
+  }
+}

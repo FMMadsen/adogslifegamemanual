@@ -1,0 +1,116 @@
+.page {
+  max-width: 50em;
+  height: 43em;
+  margin: 1.3em auto;
+  background-color: #FFFFFF;
+  background-image: url("/img/0-game-box-background.jpg");
+  background-attachment: scroll;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2em;
+  position: relative;
+  box-shadow: 1px 5px 15px 5px #888888;
+}
+
+h1,
+h2,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9B141A;
+}
+
+h1 {
+  font-size: 5em;
+  line-height: 1.4;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.language-selector-box {
+  width: 18em;
+  margin-top: 4em;
+}
+.language-selector-box a {
+  position: relative;
+  display: block;
+  margin: 1em auto;
+  font-size: 1.3em;
+  padding: 1em;
+  width: 11em;
+  background-color: #FFFEFE;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #323232;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.17);
+  transition: all 0.3s ease-in-out;
+}
+.language-selector-box a:hover {
+  transform: scale(1.15, 1.15);
+}
+.language-selector-box a:hover::after {
+  opacity: 1;
+}
+.language-selector-box a img {
+  margin-right: 0.1em;
+}
+
+@media all and (max-width: 48em) {
+  .page {
+    margin: 1em auto;
+    max-width: 40em;
+    height: 34em;
+    padding: 1.5em;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+  .language-selector-box {
+    width: 15em;
+    margin-top: 3em;
+  }
+  .language-selector-box a {
+    margin-bottom: 1.3em;
+    font-size: 1em;
+    width: 12em;
+  }
+}
+@media all and (max-width: 36em) {
+  .page {
+    max-width: 24em;
+    height: 40em;
+    padding: 1em 1em 1.4em 1em;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 1em;
+    font-weight: 800;
+  }
+  .language-selector-box {
+    width: 9em;
+    margin-top: 2em;
+  }
+  .language-selector-box a {
+    margin: 1em auto;
+    padding: 0.5em;
+    font-size: 0.8em;
+    width: 10em;
+  }
+  .language-selector-box a img {
+    width: 1.2em;
+  }
+}

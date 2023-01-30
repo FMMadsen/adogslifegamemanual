@@ -1,0 +1,36 @@
+.page {
+  max-width: 50em;
+  margin: 1.3em auto;
+  background-image: url("/img/0-page-background.jpg");
+  background-attachment: scroll;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em;
+  position: relative;
+  box-shadow: 1px 5px 15px 5px #888888;
+}
+
+.page-footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0.5em;
+}
+
+@media all and (max-width: 48em) {
+  .page {
+    margin: 1em auto;
+    width: 44em;
+    padding: 1.5em;
+  }
+}
+@media all and (max-width: 36em) {
+  .page {
+    margin: 1em auto;
+    width: 24em;
+    padding: 1em 1em 1.4em 1em;
+  }
+}
