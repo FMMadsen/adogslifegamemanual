@@ -8,15 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Update="content\content-da.json">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Content>
-    <Content Update="content\content-en.json">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="da\index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -26,7 +17,7 @@
     <None Update="index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="dist\**">
+    <None Update="dist\*.*">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
