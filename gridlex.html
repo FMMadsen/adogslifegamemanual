@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Gridlex example</title>
+    <meta name="description" content="Example of Gridlex usage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/dist/css/normalize.css">
+    <link rel="stylesheet" href="/dist/css/boilerplate.css">
+    <link rel="stylesheet" href="/dist/css/gridlex.css">
+    <link rel="stylesheet" href="/dist/css/sections.css">
+    <link rel="stylesheet" href="/dist/css/main.css">
+
+    <style>
+        body {
+            background-color: darkslateblue;
+        }
+        
+        .example {
+            margin: 0 0 20px 0;
+        }
+        
+        .example [class^="col"] {
+            background-color: goldenrod;
+            border: 1px solid blanchedalmond;
+            text-align: center;
+            padding: .4em;
+        }
+        
+        .tag {
+            border: 1px solid black;
+            border-radius: 3px;
+            padding: .4em;
+            font-size: .8em;
+            color: black;
+            background-color: firebrick;
+            margin: 10px 3px;
+        }
+        
+        .margin {
+            margin: 1em;
+        }
+        
+        .center {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="grid-center-noBottom-noGutter">
+            <div class="col-5 margin center">
+                <span class="tag">X-Small</span>
+                <span class="tag hide-on-xsmall">Small</span>
+                <span class="tag hide-on-small">Medium</span>
+                <span class="tag hide-on-medium">Large</span>
+                <span class="tag hide-on-large">Very large</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="grid example example-1">
+            <div class="col">col 1</div>
+            <div class="col">col 2</div>
+            <div class="col">col 3</div>
+            <div class="col">col 4</div>
+            <div class="col">col 5</div>
+        </div>
+
+        <div class="grid-5_lg-4_md-3_sm-2_xs-1 example example-2">
+            <div class="col">col 1</div>
+            <div class="col">col 2</div>
+            <div class="col">col 3</div>
+            <div class="col">col 4</div>
+            <div class="col">col 5</div>
+        </div>
+
+        <div class="grid-5_lg-4_md-3_sm-2_xs-1 example example-3">
+            <div class="col">col 1</div>
+            <div class="col">col 2</div>
+            <div class="col">col 3</div>
+            <div class="col">col 4</div>
+            <div class="col">col 5</div>
+        </div>
+
+        <div class="grid-center example">
+            <div class="col-5">Centered</div>
+            <div class="col-5">Centered</div>
+        </div>
+
+        <div class="grid-center example">
+            <div class="col-4">Centered</div>
+            <div class="col-4">Centered</div>
+        </div>
+
+        <div class="example">
+            <div class="grid-3-center">
+                <div class="col-2">X</div>
+                <div class="col-2">O</div>
+                <div class="col-2">X</div>
+            </div>
+            <div class="grid-3-center">
+                <div class="col-2">O</div>
+                <div class="col-2">X</div>
+                <div class="col-2">O</div>
+            </div>
+            <div class="grid-3-center">
+                <div class="col-2">X</div>
+                <div class="col-2">O</div>
+                <div class="col-2">X</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="grid-center-noBottom">
+            <div class="col-5 margin center">
+                <span class="tag">X-Small</span>
+                <span class="tag hide-on-xsmall">Small</span>
+                <span class="tag hide-on-small">Medium</span>
+                <span class="tag hide-on-medium">Large</span>
+                <span class="tag hide-on-large">Very large</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

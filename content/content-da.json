@@ -1,0 +1,377 @@
+{
+    "PageBrowserTitle": "ET HUNDELIV Brætspil Manual - Dansk",
+    "FrontPage": {
+        "RibbonText": "Dette er uofficiel oversættelse",
+        "Title": "ET HUNDELIV",
+        "SubTitle": "Spillevejledning",
+        "Players": "spillere",
+        "Age": "år",
+        "GameTimeUnit": "minutter",
+        "GameBy": "Et spil af Christophe Boelinger"
+    },
+    "S1": {
+        "Title": "ET HUNDELIV",
+        "Paragraphs": [
+            { "Text": "ET HUNDELIV er et familiespil for 2-6 spillere fra alderen 6 år og op. Mens du spiller kan du opleve hvordan det er at være en hund - en labrador, puddelhund, boxer, whippet, schæferhund og foxterrier som alle elsker eventyr og ind imellem også elsker at “slippe væk” fra deres ejere. At leve i gaderne kan være virkelig sjovt - specielt når det kommer til at tisse på gadelamper og skændes med andre hunde." },
+            { "Text": "Som hun bliver du nød til selv at finde noget at spise. Så det er bare at gøre det på hundemåden: lede efter godbidder i skraldespande og tigge efter madrester i restauranter. Men undervejs skal du sørge for at holde dig langt væk fra hundefangeren. Når du er så heldig at finde et kødben, skal du skynde dig tilbage til dit hundebo og begrave det inden en anden hund kommer og stjæler det fra dig. Er du klar til at blive en hund?" }
+        ]
+    },
+    "S2": {
+        "Title": "Spillets indehold",
+        "ImageAlt": "En hund med hat på og en avis i munden",
+        "GameContentColumn1": [
+            { "Number": "1", "Item": "Spillebræt" },
+            { "Number": "6", "Item": "malede hundefigurer" },
+            { "Number": "1", "Item": "malet hundefangers bil" },
+            { "Number": "1", "Item": "terning" },
+            { "Number": "6", "Item": "Hunde Kort - med beskrivelse af de 6 forskellige hunderaser" },
+            { "Number": "72", "Item": "Handlekort (12 stk. for hver hund)" }
+        ],
+        "GameContentColumn2": [
+            { "Number": "6", "Item": "hundebo kort" },
+            { "Number": "6", "Item": "sulttæller" },
+            { "Number": "15", "Item": "skraldespandsmarkør" },
+            { "Number": "24", "Item": "kødbensmarkør" },
+            { "Number": "12", "Item": "avismarkør" },
+            { "Number": "48", "Item": "tissetæller (8 stk. for hver hund)" },
+            { "Number": "1", "Item": "Spillevejledning" }
+        ]
+    },
+    "S3": {
+        "Title": "Spillets mål",
+        "Text": "Den første hund som finder og begraver 3 kødben i sit hundebo vinder spillet. Et spil tager ca. 40 minutter."
+    },
+    "S4": {
+        "Title": "Forberedelser før start",
+        "Image1Alt": "Kødbentæller",
+        "Image2Alt": "Avistæller",
+        "Image3Alt": "skraldespandmarkør",
+        "Image4Alt": "Hundefangeren's bil",
+        "Image6Alt": "Hundekort",
+        "Image7Alt": "Hundebo kort",
+        "Image8Alt": "Hundebo på spillebrættet",
+        "Image9Alt": "Handlekort",
+        "Text1": "Placere kødbensmarkørerne (1), avismarkørerne (2) og skraldespandmarkørerne (3) ved siden af spillebrættet. Sørg for at avisbrikkerne bliver lagt på de markerede numre. Placerer hundefangeren's bil på gaden på den sorte pote, ved siden af bygningen centralt på spillebrættet (4).",
+        "Text2BeforeImage": "Hver spiller trækker et hundekort (5) og et hundebo kort (6) og lægger kortene foran sig på bordet. Så tager man den tilhørende hundefigur (7) ",
+        "Text2AfterImage": " som matcher hundekortet og placerer den på det felt (8) på spillebrættet som matcher hundebokortet. Hver spiller lægger en sulttæller (9) i sin egen farve i felt 4 i på hundekortet. Desuden lægges en tissetæller (10) i sin egen farve i en af de to blære-felter på hundekortet. De resterende 7 tisse brikker (11) og 12 handlekort (12) i sin egen farve lægges ved siden af hundekortet."
+
+    },
+    "S5": {
+        "Title": "Hvem starter?",
+        "Text": "Undervejs i spillet skiftes spillerne til at tage en tur, i urets retning. Alle spillere kaster en terning. Den som slår højest starter spillet. Hvis der er nybegyndere med i spillegruppen, så skal den mest erfarne spiller starte spillet (eller den som har læst reglerne)."
+    },
+    "S6": {
+        "Title": "Hvordan spiller man?",
+        "Text": "Hver spillers tur består af 3 faser som sker i denne rækkefølge:",
+        "Phases": [
+            { "Title": "1. Sult.", "Description": "Sulttælleren flyttes et felt ned (til venstre)." },
+            { "Title": "2. Hundens handlinger.", "Description": "Hunden må flytte og udføre handlinger." },
+            { "Title": "3. Hundefanger.", "Description": "Spilleren flytter hundefangerens bil og sender måske også nogle hunde til dyreværnet." }
+        ],
+        "Phase1": {
+            "Title": "1. Sult",
+            "ImageAlt": "Sulttælleren flyttes et felt til venstre",
+            "Text": "Når spillerens tur starter, flyttes dennes sulttæller-brik et felt til venstre. Tælleren fortæller hvilken tilstand at hunden er i, og om dens mave måske rumler. Hvis tælleren allerede er på 0 ved start af turen, og den ikke kan rykkes længere ned, så betyder det at hunden sulter, og falder i søvn af udmattelse. I dette tilfælde sker følgende ting: hunden flyttes direkte til det første felt foran hundeværnets hus. Hunden skal da efterlade alle dens kødben og aviser præcis på det felt den stod på ved begyndelsen af turen. Umiddelbart herefter slutter spillerens tur, og fase 2 og 3 bliver ikke gjort. Turen går videre til næste spiller som normalt."
+        },
+        "Phase2": {
+            "Title": "2. Hundens Bevægelse og Handlinger",
+            "Text": "I denne fase kan hunden flytte og foretage handlinger. Præcis så mange som der er vist på hundekortet. Der bliver ikke kastet terning for at flytte. Hver eneste handling som udføres og felt der flyttes i en tur, koster en handling som beskrevet på hundekortet. Det betyder at en spiller kan flytte et antal felter og foretage et antal handlinger i turen hvor total-antallet max. må være det tilladte for den givne hund, som angivet på hundekortet. Handlinger og flytninger kan gøres i hvilken som helst rækkefølge og en spiller behøver ikke nødvendigvis at bruge alle sine handlinger i en tur. Men man kan ikke spare handlinger op fra tur til tur.",
+            "MovementTitle": "Flytning af hunden",
+            "MovementText": "Når hunden flytter rundt i byen, gælder følgende regler:",
+            "MovementImageAlt": "Illustration af hundens flytning",
+            "MovementRules": [
+                { "Description": "En hund kan flytte i alle retninger." },
+                { "Description": "Spilleren vælger hvor mange felter hunden skal flytte. Flytning koster 1 handling per felt der flyttes. Altså flyttes hunden 3 felter har man brugt 3 handlinger" },
+                { "Description": "En hund kan kun flytte fra et felt til et tilstødende felt. Feltet skal have en fælles kant, altså ikke kun røre i hjørnet." },
+                { "Description": "Retningen hunden står i, betyder ikke noget for bevægelse, den kan rykke hvilken som helst retning og ændre retning." },
+                { "Description": "En hund kan godt rykke igennem felter hvor der er en anden hund eller en hundefanger. Men den kan ikke slutte sin tur på sådan et felt. Der kan altså aldrig stå mere end 1 figur på et felt!" },
+                { "Description": "Restaurenter, Aviskiosker og Afleveringsaddresser er også felter. De koster altså også en handling at rykke ind på og ud fra. En hund kan godt gå ind i en bygning, men den skal gå ind fra feltet med indgangen som er markeret med en pote." },
+                { "Description": "En hund kan ikke gå igennem et felt som har en anden hunds tisse brik. Hvis en hund går ind på et felt med en tisse brik fra en anden hun, så slutter dens handlinger der. Den bruger resten af turen på at lugte til gadelampen, og spilleren kan ikke lave flere handlinger derefter. Spilleren kan flytte hundefangeren derefter som sædvanlig." },
+                { "Description": "Hunde kan ikke selv gå ind i hundeværnet eller en anden huns hundebo. De kan kun gå ind på en adresse hvis den har den rigtige avis som skal afleveres der." }
+            ],
+            "BoardSquaresTitle": "Typer af felter på spillebrættet",
+            "BoardSquaresStreet": {
+                "Title": "Gade",
+                "Text": "Gaderne er de mest almindelige felter på brættet, de forbinder de forskellige bygninger. Hunde og hundefangeren's bil flytter rundt på gaderne. Nogle af gaderne har springvand, gadelamper og skraldespande."
+            },
+            "BoardSquaresDen": {
+                "Title": "Hundebo",
+                "Text": "Hundeboet er det sted hvor din hund starter spillet og også der hvor den graver kødben ned. Ingen anden hun kan komme herind. Hunden kan gemme sig for hundefangeren og andre hunde i sit eget hundebo."
+            },
+            "BoardSquaresRestaurent": {
+                "Title": "Restaurant",
+                "Text": "Restauranter er steder hvor hunden kan tigge mad. Indgangen til en restaurent er markeret med en rød pote."
+            },
+            "BoardSquaresNewsStand": {
+                "Title": "Aviskiosk",
+                "Text": "Aviskiosken er stedet hvor hunden kan hente en avis. Aviskiosken har flere indgange som alle kan benyttes. En aviskiosk kan bruges som genvej."
+            },
+            "BoardSquaresDeliveryAddress": {
+                "Title": "Afleveringsadresse",
+                "Text": "En adresse med et nummer kaldes en afleveringsadresse. Her kan en hund aflevere en avis hvis den har det rigtige nummer. Hunden kan ikke gå ind i bygningen uden den rigtige avis. Indgangen er markeret med en grøn pote."
+            },
+            "BoardSquaresDogShelter": {
+                "Title": "Hundeværnet",
+                "Text": "Hundeværnet er en bygning i midten af spillebrættet. Når en hund kommer ud af hundeværnet starter den sin tur her. Udgangen er markeret med en sort pote. Hunde kan ikke selv vælge at gå ind i dette hus, men når en hund bliver fanget af hundefangeren, havner de i hundeværnet. Dette er illustreret i øverste højre hjørne af spillebrættet."
+            },
+            "DogActions": {
+                "Title": "Hundens handlinger",
+                "FocusBox1": {
+                    "Title1": "Handlingskort — Hvordan virker de?",
+                    "Text1": "Handlingskort bruges til at afgøre resultatet af nogle hundehandlinger: gennemsøge skraldespande, tigge i restauranter, aflevere aviser, slås med andre hunde, kontakt med hundefangeren og slippe ud af hundeværnet. Når en hund kommer ud for en af disse handlinger, vender spilleren det øverste kort fra sin bunke med handlingskort. Resultatet af den handling kan så aflæses via symbolet som er vist i den relevante sektion af kortet. Efter en handling skal kortet lægges i 'brugt' bunken med forsiden opad.",
+                    "Title2": "Når bunken med handlingskort er tom",
+                    "Text2": "Når alle handlingskortene er brugt for en hund så tager man hele brugtbunken, blander dem og laver en ny bunke med forsiden nedad, klar til nye handlinger."
+                },
+                "FocusBox2": {
+                    "Title1": "Mad fra Handlingskort",
+                    "Text1": "Hvis en hund får mad fra Handlingskortet skal dens Sulttæller flyttes et felt til højre. Sulttælleren kan dog ikke komme over 4, da en hund ikke kan gemme mad. Mad som fås herudover er tabt.",
+                    "Title2": "Fri plads i munden",
+                    "Text2": "Hundene kan bære op til 2 kødben og/eller aviser i munden. Hvis en hund allerede har to ting i munden og finder en ny ting, kan den ikke samle det op. Tingen forbliver hvor den ligger."
+                },
+                "FocusBox3": {
+                    "Title1": "Billede 1",
+                    "Title2": "Gevinst ved restaurenter, affaldsspande og avisafleveringer",
+                    "Text": "Din hund får enten et kødben eller nok mad til 1, 2 eller 3 dage. Hvis der er et billede af en hund med sørgelige øjne, så får din hund ingenting."
+                },
+                "Search": {
+                    "Title": "Lede i skraldespande",
+                    "Texts": [
+                        { "p": "Hvis en hund står på et felt med en skraldepsand som ikke er gennemsøgt (ikke nogen skraldespandmarkør), så kan hunden gennemsøge skraldet ved at bruge en handling." },
+                        { "p": "I den situation skal spilleren vende det øverste handlingskort og kigge på skraldespand-sektionen og se hvad hunden finder <i>(se billede 1)</i>. Derefter lægge en skraldespandsmarkør på feltet som hunden står på." }
+                    ]
+                },
+                "Cleaning": {
+                    "Title": "Den store rengøring!",
+                    "Text": "Hvis en spiller lægger den sidste skraldespandsmarkør på et felt, er det tid til “Den Store Rengøring”. Skraldemænd kommer og tømmer alle skraldespande og rengører vejen omkring. Beboere tager nu deres affald ud. <b>Fjern alle tissemarkører og skraldespandsmarkørere på spillebrættet, undtagen den som netop er placeret til sidst på brættet</b>."
+                },
+                "Begging": {
+                    "Title": "Tigge i Restaurenter",
+                    "Text": "Når en hund går ind på en restaurant kan den tigge efter mad. Dette koster en handling. Spilleren vender det øverste handlingskort og kigger på Restaurent sketionen for at se hvad hunden får ud af det <i>(se billede 1)</i>. Man kan ikke tigge to gange i samme tur i samme restaurant."
+                },
+                "GetNewspaper": {
+                    "Title": "Hente en Avis",
+                    "Texts": [
+                        { "p": "Hvis en hund står ved en aviskiosk, kan de gø og bede om at hente en avis som den skal aflevere et andet sted. At gø efter en avis koster en handling." },
+                        { "p": "Kioskmanden giver en avis til hunden som den skal aflevere på en bestemt adresse. Spilleren vælger en tilfældig Avismarkør fra bunken ved siden af spillebrættet. Spilleren kikker i hemmelighed på adressen og placerer den derefter i hundens mund. Nummeret bag på Avismarkøren viser hvilken adresse at avisen skal afleveres til." }
+                    ]
+                },
+                "DeliverNewspaper": {
+                    "Title": "Aflevere en Avis",
+                    "Text": "Når en hund går ind i en bygning med en avis som skal afleveres på den adresse, så afleverer den avisen. Dette koster en handling. Man viser nummeret til andre spillere så de kan se at det er den rigtige adresse. Derefter lægges Avismarkøren tilbage i bunken, som derpå blandes. Spilleren vender nu det øverste handlingskort og kigger i Avis sektionen for at se hvilken gevinst at hunden får <i>(se billede 1)</i>."
+                },
+                "Drink": {
+                    "Title": "Drikke en tår vand",
+                    "Text": "Når en hund er på et felt med et springvand, så kan den vælge at drikke vand. Det koster en handling. Så sætter man en Tissemarkør på hundens 'Blære' område på Hundekortet. Hunden kan godt drikke flere gange i samme tur, men det koster ekstra handlinger. Hvis spilleren ikke har flere tissemarkører så kan hunden ikke drikke."
+                },
+                "LampPost": {
+                    "Title": "Tisse op af en gadelampe",
+                    "Texts": [
+                        { "p": "Hvis en hund har minumum 1 Tissemarkør på dens blære-felter og den står på et felt med en gadelampe, så kan den tisse på gadelampen. Det koster en handling. Tissemarkører tages fra Hundekortet og lægger det på feltet med gadelampen." },
+                        { "p": "Hvis en anden hund går på et felt med en gadelampe som der er tisset på, så skal den stoppe og lugte til det. Den mister derpå alle sine resterende handlinger. Dermed ender hundens Handlingsfase, og Hundefanger fasen begynder." },
+                        { "p": "I begyndelsen af hundens næste tur ved Handlingsfasen, kan hunden vælge at markere gadelampen med sin egen Tissemarkør. Dermed flyttes den Tissemarkør som lå der før. Dette foregår på samme måde som hvis hunden netop var gået hen til et felt med en gadelampe uden en Tissemarkør." }
+                    ]
+                },
+                "FocusBox4": {
+                    "Title1": "Billede 2",
+                    "Title2": "Resultat af kamp",
+                    "Text": "1 pote, 2 poter eller 3 poter."
+                },
+                "Fight": {
+                    "Title": "Kamp",
+                    "Texts": [
+                        { "p": "Hvis din hund er på gaden og på et felt lige op af en anden hunds position, kan du angribe den. Dette er en handling." },
+                        { "p": "En hund på gaden kan ikke angribe en anden hund i sit Hundebo eller i en bygning. En hund i sit Hundebo eller i en bygning kan ikke angribe en hund på gaden." },
+                        { "p": "Både angriberen og forsvarern vender øverste handlingskort og kigger i 'Kamp' sektionen. <i>(se billede 2)</i>. Hunden med det højeste antal poter vinder kampen." },
+                        { "p": "Hunden som taber kampen, smider alle sine kødben og aviser på det felt den står på. Derefter flytter den et felt væk fra vinderen. Hvis dette tvinger den ind på et felt med en anden hund eller hundefangeren, så skal den flytte yderligere et felt i samme retning." },
+                        { "p": "<b>Hvis den angribende hun taber kampen, så må den ikke rykke længere og spillerens tur slutter her. Spilleren kommer ikke til at rykke hundefangeren i denne tur, og derpå bliver det næste spillers tur</b>." },
+                        { "p": "Hvis antallet af poter på begge handlingskort er det samme, så slutter kampen og der sker ingenting. Angriberen kan de vælge at angribe igen for yderligere en handling." }
+                    ]
+                },
+                "FightExample": {
+                    "Title": "Eksempel på en kamp",
+                    "Texts": [
+                        { "p": "Romeo står på feltet ved siden af Bella og bruger en Handling på at angribe hende (1)." },
+                        { "p": "Begge spillere vender nu deres Handlingskort og fortæller højt hvor mange poter de har. For eksempel hvis, Romeo har tre poter og Bella kun har en pote (2). Da vinder Romeo." },
+                        { "p": "Bella smider hendes Kødben på feltet hun står på, og rykker derefter et felt i retning væk fra Romeo (3)." },
+                        { "p": "Romeo’s tur fortsætter nu. Han kan bruge en handling på at rykke inde på Bellas tidligere felt og bruge yderligere en handling på at samle kødbenet op som Bella har smidt (4)." }
+                    ]
+                },
+                "PickUp": {
+                    "Title": "Samle Kødben og Avis op",
+                    "Text": "Hvis en hund står på et felt med et Kødben eller en Avis, så kan denne samles op. Spilleren lægger Kødbenet eller Avisen i hundens mund. Hvis hunden ikke har nogle ledige pladser i sin mund, så kan den ikke samle nogle ting op."
+                },
+                "Dropping": {
+                    "Title": "Smide Kødben og Aviser",
+                    "Text": "En spiller kan godt smide et kødben eller en avis fra hundens mund og ned på gaden for at frigøre plads til noget andet. Dette kræver en handling. Den lander på feltet som hunden står på. Kødben og aviser kan ikke smides inde i bygninger."
+                },
+                "Burry": {
+                    "Title": "Begrave kødben",
+                    "Texts": [
+                        { "p": "Hvis en hund er i sit hundehus og den har en eller flere Kødben, så kan deb begrave dem. Det koster en handling." },
+                        { "p": "Spilleren lægger da kødbenmarkørern på hundebo kortet. På denne måde er kødbenet sikret og ingen anden hund kan tage det nu. Ikke engang hunden selv kan grave det op igen i løbet af spillet." },
+                        { "p": "Når en hund har begravet 3 kødben, vinder den spillet, og spillet slutter!" }
+                    ]
+                },
+                "DogPhaseExample": {
+                    "Title": "Eksempel på en tur",
+                    "Texts": [
+                        { "p": "Bella tager sin første tur i spillet. Spilleren flytter Sultmarkører fra felt 4 til felt 3 (1), og nu er det tid til handlinger!" },
+                        { "p": "Bella har nu 7 handlinger som spilleren kan gøre i sin tur (2). Hun starter sin bevægelse fra Hundeboet (3). Hun tager sit første skridt til feltet på gaden med en gadelampe lige foran sit hundebo (4). Flytningen af 1 felt koster 1 handling, og nu har hun 6 handlinger tilbage." },
+                        { "p": "For at forhinder andre hunde i at gå rundt omkring hendes hundebo, vælger hun at tisse på gadelampen. En Tissemarkør placeres på gadelampen (5). At tisse koster også en handling, og nu har Bella 5 handlinger tilbage." },
+                        { "p": "Bella går nu hen forand den Mexicanske Restaurant og stiller sig ved indgangen med den røde pote (6). Dette er flytning over 2 felter på spillebrættet og koster derfor 2 handlinger. Bella har nu 3 handlinger tilbage." },
+                        { "p": "For 1 handling drikker Bella vand og tilføjer 1 tissemarkør til hendes blære på hundekortet (7). Bella har nu 2 handlinger tilbage." },
+                        { "p": "For 1 handling flytter hun nu indenfor i restaurenten (8) og bruger nu den sidste handling på at tigge efter mad. Spilleren vender nu et handlingskort og ser at Bella nu får mad til 3 dage (9). Nu flyttes sultmarkører fra felt 3 til felt 4 (10). Yderligere mad til overs, er bare tabt." },
+                        { "p": "Bella har nu ikke flere handlinger og nu kommer næste fase 'Hundefangeren'." }
+                    ]
+                }
+            }
+        },
+        "Phase3": {
+            "Title": "3. Hundefangeren",
+            "Texts": [
+                { "p": "At flytte hundefangerens bil og fange hunde er det sidste en spiller gør i sin tur. Først kastes terningen hvorefter hundefangerens bil flyttes det antal felter som terningen viser." },
+                { "p": "Bilen kan kun flytte fremad, til venstre eller til højre. Den kan ikke flytte tilbage eller baglæns. Når bilen stopper, så skal den efterlades pegende i den retning den har bevæget sig sådan at den næste spiller ved hvilken retning bilen kan flytte." },
+                { "p": "Bilen kan køre felt for felt frem, og skal rykke det præcise antal felter som terningen viser. Bilen kan slutte sin flytning på et felt med en hund. Bilen kan ikke køre ind i et hundebo eller bygninger." }
+            ],
+            "Caught": {
+                "Title": "Fanget!",
+                "Texts": [
+                    { "p": "Hvis hundefangeren stopper på et felt med en hund, bliver hunden omgående fanget og sendt til hundeværnet. Hunden mister alle sine kødben og aviser fra munden ned på det felt den stod på da den blev fanget. Stil hunden på det første felt i hundeværnet. Bilen forbliver på feltet hvor den fangede hunden." },
+                    { "p": "Hvis hundefangeren stopper på et felt ved siden af et felt med en hund, så prøver hunden omgående at skjule sig. Det foregår sådan at spilleren til hunden, vender sit handlingskort og kigger i Hundefanger sektionen <i> (billede 3)</i> for at se om hunden er fanget eller det er lykkedes den at undslippe." }
+                ]
+            },
+            "Example1": {
+                "Title": "Eksempel på en hundefangers flytning",
+                "Text": "En spiller er netop blevet færdig med at flytte sin hund, Romeo, og skal nu til at flytte hundefangeren. Bilen står foran butikken og peger i retning mod pizzariaet (1). Spilleren kaster terningen, slår en 2'er og flytter bilen hen foran Pizzariaet (2). Daisy stod netop på det felt og er derfor automatisk fanget og flytter direkte til det første felt i hundeværnet (3). Charlie og Max står begge på tilstødende felter og derfor skal begge deres spillere vende et handlingskort og se i hundefanger sektionen hvad der kommer til at ske (4). Charlie bliver fanget og følger efter Daisy ind i hundeværnet. Max er heldig og undslipper og forbliver på sit felt."
+            },
+            "FocusBox": {
+                "Title": "Billede 3 — Resultat af Hundefangeren Og Slippe ud af Hundeværnet",
+                "TextLeft": "En hund kan enten blive fanget eller undgå at blive fanget.",
+                "TextRight": "Hunden kan enten forblive i Hundeværnet eller slippe ud af Hundeværnet."
+            },
+            "IntoShelter": {
+                "Title": "Hunde i Hundeværnet",
+                "Text": "Hunde i Hundeværnet bliver ikke sultne fordi de får mad fra personalet når de opholder sig der. De kan ikke flytte eller gøre nogen handlinger. En spiller i Hundeværket vil i begyndelsen af sin tur forsøge at slippe fri."
+            },
+            "LeaveShelter": {
+                "Title": "Forlade Hundeværnet",
+                "Texts": [
+                    { "p": "En spiller som har sin hund i Hundeværnet vender et handlingskort i starten af sin tur og tjekker i flugt-sektionen for at se om sin hund er lykkedes at slippe fri <i>(se billede 3)</i>." },
+                    { "p": "Hvis der er billede af en løbende hund, kan hunden forlade Hundeværnet, med 1 tissemarkør og sultmarkøren sat på nummer 4. Hunden starter sin flytning fra bygningen i feltet i midten som er markeret med en sort pote." },
+                    { "p": "Hvis billedet på Handlekortet viser en hund bag tremmer, så vil hunden flytte til det andet felt i Hundeværnet." },
+                    { "p": "Ved anden runde hvor hunden stadig er i hundeværnet, skal spilleren i begyndelsen af turen vende et handlingskort. Hvis bare et af kortene viser en løbende hund i flugt-sektionen, kan hunden forlade hundeværnet. Hvis ikke, da vil hunden forblive i hundeværnet og rykke til tredje felt i hundeværnet. I tredje runde hvor hunden stadig er i hundeværnet må hunden automatisk forlade hundeværnet i begyndelsen af sin tur, uden at vende flere Handlingskort." }
+                ]
+            },
+            "Example2": {
+                "Title": "Eksempel på en flugt fra hundeværnet",
+                "Texts": [
+                    { "p": "Romeo starter sin tur på det andet felt i hundeværnet (1). Det er fordi den ikke lykkedes at flygte i sidste tur. Spilleren starter nu sin tur med at vende 2 handlingskort. I flugt-sektionen vises på det ene kort en løbende hund som slipper fri og på et andet kort vises der en hund bag tremmer (2). Et positivt resultat er nok til at Romeo slipper ud af hundeværnet. Spilleren sætter Romeos sultmarkør til 4 og tjekker at der er præcis 1 tissemarkør på hundekortet. I mad fasen skal Romeos sultmarkør sættes ned på 3 (3)." },
+                    { "p": "Romeo starter sin tur fra hundeværnet på feltet i midten med en sort pote. Uheldigvis står hundefangerens bil på præcis det felt, og derfor bliver Romeo nødt til at flytte minimum 2 felter for at undgå at blive direkte fanget med det samme igen (4)." }
+                ]
+            }
+        }
+    },
+    "S7": {
+        "Title": "Spil Varianter",
+        "ExtendedGame": {
+            "Title": "Udvidet spil",
+            "Text": "Den hund som først begraver 4 kødben i sit hundehusfelt vinder. Denne spilvariation tager omkring 15 minutter længere og giver en fordel til erfarne spillere."
+        },
+        "Experienced": {
+            "Title": "Erfaren Hundemester",
+            "Texts": [
+                { "p": "Spillerne trækker ikke deres hund tilfældigt. Spillerne vælger selv sin hund. Vi anbefaler denne spilvariant til spillere som har noget erfaring med spillet og har en favorit-hunderace." },
+                { "p": "Spilleren som starter, vælger først sin hund. Derefter vælger de resterende spillere deres hun i urets retning rundt. Den sidste spiller som vælger sin hund har et mere begrænset valg ind den første spiller. For at udligne denne ulighed, er det sidste spiller som først vælger Hundebo kort. Og de resterende spillere vælger Hundebo kort i omvendt-uret rækkefølge." }
+            ]
+        },
+        "Packs": {
+            "Title": "Flok (til 2 Spillere)",
+            "Texts": [
+                { "p": "Begge spillere vælger 3 hunde. Disse tre hunde er spillerens hundeflok. Spillerne tager deres turer med én hund ad gangen med hver af deres individuelle hunde. Spillet slutter når en hund har begravet 3 kødben vinder spilleren som har den hund." },
+                { "p": "En spillers hunde kan ikke angribe hinanden, men de stopper stadig ved en gadelampe som er tisset på af en hund fra deres egen flok. En flok kan samarbejde og fordele opgaver sådan at hver hund gør det den er bedst til. Det er krig imellem hundeflokke!" }
+            ]
+        },
+        "Pairs": {
+            "Title": "Par (til 3 Spillere)",
+            "Texts": [
+                { "p": "Hver spiller vælger 2 hunde. Spillerne tager deres ture med én hund af gangen med hver af deres individuelle hunde. Spillet slutter når en hund har begravet 3 kødben vinder spilleren som har den hund." },
+                { "p": "En spillers hunde kan ikke angribe hinanden, men de stopper stadig ved en gadelampe som er tisset på af en hund fra deres egen flok." }
+            ]
+        }
+    },
+    "S8": {
+        "Title": "The Motley Crew — Sådan Spiller Du Din Helt",
+        "Max": {
+            "Title": "Schæferhunden Max",
+            "Text": "Jeg er en stærk kæmper - jeg kan klare enhver anden hund i en kamp. Det ved andre hunde godt og lader mig derfor ofte være i fred. Jeg har været i politihundetræning, hvilket også er grunden til at de ofte er flinke imod mig i Hundeværnet og lader mig slippe ud. Jeg får ofte mad fra Politiet og det er meget sjældent jeg leder i skraldespande."
+        },
+        "Bella": {
+            "Title": "Puddelhunden Bella",
+            "Text": "Jeg er Creme De La Creme hunden i byen, altid perfekt trimmet og ren. Jeg vil aldrig røre en skraldespand. Jeg kan forskellige sjove tricks og får tit mad på restauranter. Jeg er en sød dame som ikke kan lide at komme i kamp og heller ikke løbe stærkt. Det ved andre hunde godt, og angriber mig og tager mine kødben."
+        },
+        "Charlie": {
+            "Title": "Foxterrieren Charlie",
+            "Text": "Jeg er talentfuld og modig, ligesom de berømte hunde af min race. Jeg kan lugte mig frem til nærmest alting, så ingen skraldespand er sikker for mig. Da jeg tit leder i skraldespande og jeg bekymrer mig ikke for beskidte puddelhunde, er det ofte at folk ikke kan li min lugt. De hader mig i restauranter og i hundeværnet vasker de mig altid, og selvfølgelig sørger de for at jeg ikke stikker af. Den stærkeste hun kan klare mig, men jeg kan klare alle de andre."
+        },
+        "Buddy": {
+            "Title": "Labradoren Buddy",
+            "Text": "Jeg elsker at lege, min elskede hobby er at løbe med aviser. Jeg er vand til at finde eller tjene til min egen mad. Tigge mad er ikke noget for mig, og jeg er heller ikke særlig god til det. Jeg er meget godmodig, har aldrig travlt og har det fint med stille og roligt. Jeg kan ikke li at kæmpe, men jeg er meget stærk."
+        },
+        "Daisy": {
+            "Title": "Whippet hunden Daisy",
+            "Text": "Mennesker kan godt lide mig fordi jeg er flot og slank. Jeg er den hurtigste hund i byen og kan gøre flest handlinger per tur. Jeg er ikke den store kamphund og stikker for det meste af hvis der er en bølle efter mig."
+        },
+        "Romeo": {
+            "Title": "Boxeren Romeo",
+            "Text": "Jeg er ikke nogen smuk hvalp så jeg får nok ikke så meget i restaurenten. Derfor har jeg lært at finde mad i skraldespande og tage kødben fra andre hunde. Jeg er den stærkeste hund i byen. Desværre ved Hundefangeren det, og er altid efter mig."
+        }
+    },
+    "S9": {
+        "Title": "Spil Tips",
+        "Tips": [
+            { "i": "Du kan skjule dig fra hundefangeren eller fra andre hunde som vil slås, inde i bygninger eller i dit hundebo. Vi anbefaler, specielt til de svagere hunde, altid at slutte sin tur inde i en bygning. Denne beskyttelse kan godt betale sig endda selvom den koster nogle ekstra handlinger i en tur." },
+            { "i": "Når du får et kødben, sørg for at få det til dit hundebo så hurtigt som muligt! Andre hunde vil forsøge at forhindre dig i at få begravet dit kødben for at forhindre dig i at vinde." },
+            { "i": "Hvis du slutter en tur med at lugte til en gadelampen, så markere den i starten af din næste tur." },
+            { "i": "Hvis en hund stopper for at lugte til din tissetår ved en gadelampe, så kan du angribe den og skubbe den til et andet felt og forhindre at den fjerner din tissemarkør." },
+            { "i": "Hver hundebo har forskellige omgivelser. Tænk på hvilken fordel at netop dit hundebo giver dig. Prøv også at tisse på gadelamper omkring dit hundebo for at forhindre andre hunde i at gå omkring dit hundebo, sådan så du sikrer en sikker hjemkomst med et kødben senere." },
+            { "i": "Hundefangerbilen kan ikke dreje rundt eller køre baglæns. Feltet lige bag en hundefangers bil er ofte sikkert at stå på." },
+            { "i": "Når 2 hunde kæmper om et kødben, så kan det ikke betale sig for svagere hunde at gå ind i kampen. Gå hellere og lave andre opgaver og lad de andre kæmpe." },
+            { "i": "Hvis du får fat på en avis som tager for lang tid at aflevere, så kan du bare smide den forand aviskiosken og bede om en ny avis." },
+            { "i": "Puddelhunden Bella og Whippet hunden Daisy kan faktisk spille simpelt og tigge i nærmeste restauranter og løbe hjem med kødben. Det er en meget hurtig og effektiv strategi som kun kan modarbejdes af en godt planlagt tissemarkering eller angreb fra andre hunde." },
+            { "i": "Der er flere skraldespande end der er skraldespandsmarkører, hvilket betyder at byen bliver rengjort ret ofte. Når der ikke er mange skraldemarkører tilbage kan du drage fordel af det ved at gennemsøge nogle flere skraldespande for at starte en rengøring og få fjernet alle tissemarkørerne fra spillebrættet." },
+            { "i": "Når du er ved et springvand, så sørg for at drikke nok vand til at fylde hele blæren. Altså drik alt det vand som du kan så du ikke skal komme tilbage så ofte." },
+            { "i": "Aviskiosken har mange indgange. Bruge den nærmeste som genvej!" }
+        ]
+    },
+    "S10": {
+        "Title": "Et Rigtigt Hundeliv",
+        "WhyDogsPiddle": {
+            "Title": "Hvorfor tisser hunde på gadelamper og hjørner?",
+            "Text": "Hunde bruger tisning til at markere deres territorium og efterlade beskeder til hinanden. En hund der går forbi et sted som er tissemarkeret stopper op og lugter til det for at finde ud af hvem som efterlod en besked og hvornår."
+        },
+        "WhyDogsBury": {
+            "Title": "Hvorfor begraver hunde deres kødben?",
+            "Text": "Jorden er for en hund hvad et køleskab er for mennesker. Når kødbenet ligger begravet og ikke får ilt, så rådner det ikke og andre hunde kan ikke lugte det. Ejeren kan grave kødbenet op senere undtagen hvis den har glemt hvorhende det var begravet."
+        },
+        "DogsAndNewspaper": {
+            "Title": "Hunde og aflevering af aviser",
+            "Text": "At bære og løbe med en avis er noget som kræver en masse tålmodighed at lære for både hunden og dens ejer. Men det betaler sig fordi hunden har meget sjov ud af at hente aviser og løbe med sko osv."
+        },
+        "RealDogShelters": {
+            "Title": "Rigtige Hundeværn",
+            "Texts": [
+                { "p": "Hundeværnet er et sted som tager sig af uønskede hunde og hunde som er faret vildt. Hunde bliver ikke sendt derhen fordi de er slemme. Faktisk det modsatte, det er hundeejerens skyld at vedkommende fik en hund som vedkommende ikke kunne tage sig af. Hunde bliver hos Hundeværnet indtil dens rigtige ejer kommer og henter den eller indtil en ny ejer adopterer hunden og henter den." },
+                { "p": "Selvom Hundeværket tager sig godt af hunde så er hunde ikke lykkelige for at være der. En hund har brug for en ejer som den kan bliver forelsket i og være en loyal vend for. Hundeværket har rigtig mange hunde, specielt efter jul, fordi hunde bliver ofte givet som en ikke særlig gennemtænkt gave. Inden du giver en hundehvalp i gave skal du overveje om vedkommende har tid og energi til at tage sig af en hund. Og endnu bedre, spørge vedkommende om de rent faktisk godt vil have en hund. En hun er ikke et stykke legetøj som man kan hygge sig med og så smide væk. At få en hund er en forpligtelse i op mod 15 år!" },
+                { "p": "Hvis du beslutter dig for at du eller en af dine nærmeste er klar til at tage sig af en hund, bør du bestemt overveje at adobtere en fra hundeværnet. En hund som har mistet sin ejer vil lynhurtigt blive forelsket i en ny familie og være meget taknemmelig for at blive redet. Det vil dog nok tage lidt tid at blive vant til et nyt hjem." },
+                { "p": "Hundeværn har ikke kun hvalpe - du kan også overveje at adoptere en voksen hund. I stedet for at opdrage en hvalp som du ønsker kan du få en hund som allerede er opdraget og har formet sin personlighed." },
+                { "p": "I de fleste lande kan du få en hund gratis fra et Hundeværn. Og der kan desuden være andre finansielle fordele ved at adoptere en hund fra et hundeværn i stedet for at købe en." }
+            ]
+        }
+    },
+    "S11": {
+        "Title": "Er du glad for Et Hundeliv?",
+        "TextBeforeEmail": "Hvis du har nogle spørgsmål eller ideer til at forbedre spillet, så skriv blot ",
+        "Email": "feedback@adogslife.eu",
+        "TextAfterEmail": "!"
+    }
+}

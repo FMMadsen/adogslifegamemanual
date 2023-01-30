@@ -1,0 +1,70 @@
+@import 'variables';
+.focus-box-blue {
+    background-color: $baby-blue;
+    border: 3px solid $dark-red;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 2em;
+    position: relative;
+    h4 {
+        margin-top: 0;
+        font-size: 1.2em;
+        line-height: 1.1em;
+    }
+    .text-area-right {
+        padding-left: 15.5em;
+    }
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-around;
+    &.bottom-space {
+        margin-bottom: 1em;
+    }
+}
+
+.image-box {
+    position: relative;
+}
+
+.top-right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+.big-space-box {
+    margin: 3em 0 3em 0;
+}
+
+.top-space {
+    margin-top: 1.5em;
+}
+
+.top-extra-space {
+    margin-top: 2em;
+}
+
+.top-double-space {
+    margin-top: 3em;
+}
+
+.no-bottom {
+    margin-bottom: 0;
+}
+
+@media all and (max-width: 48em) {
+    .focus-box-blue {
+        .text-area-right {
+            padding-left: 15em;
+        }
+    }
+}
+
+@media all and (max-width: 36em) {
+    .focus-box-blue {
+        .text-area-right {
+            padding-left: 0;
+        }
+    }
+}

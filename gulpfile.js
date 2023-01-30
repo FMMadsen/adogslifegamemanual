@@ -1,132 +1,82 @@
 'use strict';
 
-var gulp = require('gulp'),
-    connect = require('gulp-connect'),
-    rm = require('gulp-rm'),
-    flatten = require('gulp-flatten'),
-    sass = require('gulp-sass'),
-    rename = require('gulp-rename'),
-    mustache = require('gulp-mustache');
+const { watch, series, parallel, src, dest } = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const flatten = require('gulp-flatten');
+const rm = require('gulp-rm');
+const mustache = require("gulp-mustache");
+const rename = require("gulp-rename");
+const connect = require('gulp-connect');
 
 /********************************************
  *  WEBSERVER
  ********************************************/
-gulp.task('connect', function() {
-    connect.server({
-        name: 'Dev App',
-        root: '.',
-        port: 8014,
-        livereload: true,
-    });
-});
-gulp.task('reload_page', function() {
-    gulp.src('./*.html').pipe(connect.reload());
-});
-gulp.task('webserver-watch', function() {
-    gulp.watch(['./*.html', 'en/*', 'da/*', './dist/**/*.*'], ['reload_page']);
-});
+function startWebserver() {
+    connect.server();
+};
 
 /********************************************
  *  SASS TASKS
  ********************************************/
-gulp.task('sass', ['sass-gridlex', 'sass-custom']);
-gulp.task('sass-gridlex', function() {
-    return gulp
-        .src(['./style/vendor/gridlex/**/gridlex.scss'])
+const transpileSass = parallel(sassGridlex, sassCustom);
+
+function sassGridlex() {
+    return src('./style/vendor/gridlex/**/gridlex.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(flatten())
-        .pipe(gulp.dest('./dist/css'));
-});
-gulp.task('sass-custom', function() {
-    return gulp
-        .src(['./style/*.scss'])
+        .pipe(dest('./dist/css'));
+}
+
+function sassCustom() {
+    return src('./style/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(flatten())
-        .pipe(gulp.dest('./dist/css'));
-});
-gulp.task('watch-sass-custom', function() {
-    gulp.watch(['./style/*.scss'], ['sass-custom']);
-});
+        .pipe(dest('./dist/css'));
+}
 
 /********************************************
  *  HTML GENERATION WITH MUSTACHE
  ********************************************/
-gulp.task('generate-html', ['generate-html-en', 'generate-html-da']);
-gulp.task('generate-html-en', function() {
-    return gulp
-        .src('./content/template.html')
+const generateHtml = parallel(generateHtmlEn, generateHtmlDk);
+
+function generateHtmlEn() {
+    return src('./content/template.html')
         .pipe(mustache('./content/content-en.json', {}, {}))
         .pipe(rename('index.html'))
-        .pipe(gulp.dest('./en'));
-});
-gulp.task('generate-html-da', function() {
-    return gulp
-        .src('./content/template.html')
+        .pipe(dest('./en'));
+}
+
+function generateHtmlDk() {
+    return src('./content/template.html')
         .pipe(mustache('./content/content-da.json', {}, {}))
         .pipe(rename('index.html'))
-        .pipe(gulp.dest('./da'));
-});
-gulp.task('watch-html-template', function() {
-    gulp.watch(['./content/template.html'], ['generate-html']);
-});
-gulp.task('watch-content-en', function() {
-    gulp.watch(['./content/content-en.json'], ['generate-html-en']);
-});
-gulp.task('watch-content-da', function() {
-    gulp.watch(['./content/content-da.json'], ['generate-html-da']);
-});
-/********************************************
- *  FILE COPY TASKS
- ********************************************/
-gulp.task('copy-files', ['copy-normalize-css', 'copy-boilerplate-css', 'copy-js', 'copy-fonts']);
-gulp.task('copy-normalize-css', function() {
-    return gulp
-        .src(['./style/vendor/normalize/**/*.css'])
-        .pipe(flatten())
-        .pipe(gulp.dest('./dist/css'));
-});
-gulp.task('copy-boilerplate-css', function() {
-    return gulp
-        .src(['./style/vendor/html5boilerplate/**/*.*'])
-        .pipe(flatten())
-        .pipe(gulp.dest('./dist/css'));
-});
-gulp.task('copy-js', function() {
-    return gulp
-        .src(['./script/**/*.js'])
-        .pipe(flatten())
-        .pipe(gulp.dest('./dist/js'));
-});
-gulp.task('copy-fonts', function() {
-    return gulp
-        .src(['./style/fonts/*.*'])
-        .pipe(flatten())
-        .pipe(gulp.dest('./dist/fonts'));
-});
+        .pipe(dest('./da'));
+}
 
 /********************************************
  *  FILE REMOVE
  ********************************************/
-gulp.task('clean-dist', function() {
-    return gulp.src(['dist', './dist/**/*', './da', './da/**/*', './en', './en/**/*'], { read: false })
-        .pipe(rm())
-});
+function cleanDist() {
+    return src(['dist', './dist/**/*'], { read: false, allowEmpty: true }).pipe(rm());
+}
 
 /********************************************
- *  JAVASCRIPT BUNDLING TASKS
+ *  EXPORTED 'PUBLIC' TASKS (CALLED FROM CMD)
  ********************************************/
+function defaultTask(cb) {
+    console.log('Running default task for Gulp');
+    console.log('Possible gulp tasks');
+    console.log(' - build');
+    console.log('Or specific tasks Possible gulp tasks');
+    console.log(' - clean');
+    console.log(' - styles');
+    console.log(' - html');
+    cb();
+}
 
-
-/********************************************
- *  WATCH
- ********************************************/
-gulp.task('watch-all', ['webserver-watch', 'watch-sass-custom', 'watch-html-template', 'watch-content-en', 'watch-content-da'])
-
-/********************************************
- *  TASKS CALLED FROM COMMAND PROMPT
- ********************************************/
-gulp.task('clean', ['clean-dist']);
-gulp.task('default', ['generate-html', 'copy-files', 'sass']);
-gulp.task('observer', ['generate-html', 'copy-files', 'sass', 'connect']);
-gulp.task('development', ['generate-html', 'copy-files', 'sass', 'connect', 'watch-all']);
-gulp.task('webserver', ['connect']);
+exports.default = defaultTask;
+exports.build = series(cleanDist, parallel(generateHtml, transpileSass));
+exports.webserver = startWebserver;
+exports.clean = cleanDist;
+exports.styles = transpileSass;
+exports.html = generateHtml;

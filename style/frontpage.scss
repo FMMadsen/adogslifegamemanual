@@ -1,0 +1,69 @@
+header {
+    .page {
+        height: 70em;
+        background-image: url("/img/0-page-background-frontpage.jpg");
+    }
+    .feature-row {
+        margin-top: 48em;
+    }
+    .feature-text-main {
+        font-size: 2.4em;
+        font-weight: 800;
+        line-height: 1em;
+        text-align: center;
+        display: block;
+    }
+    .feature-text-sub {
+        font-size: 1.1em;
+        font-weight: 800;
+        line-height: 1em;
+        text-align: center;
+        display: block;
+    }
+    .credit {
+        font-size: .8em;
+        font-weight: 800;
+        line-height: 1em;
+        text-align: right;
+    }
+}
+
+@media all and (max-width: 48em) {
+    header {
+        .page {
+            height: 62em;
+        }
+        .feature-row {
+            margin-top: 44em;
+        }
+        .feature-text-main {
+            font-size: 2.5em;
+        }
+        .feature-text-sub {
+            font-size: 1em;
+        }
+        .credit {
+            font-size: 1em;
+        }
+    }
+}
+
+@media all and (max-width: 36em) {
+    header {
+        .page {
+            height: 34em;
+        }
+        .feature-row {
+            margin-top: 24em;
+        }
+        .feature-text-main {
+            font-size: 1.5em;
+        }
+        .feature-text-sub {
+            font-size: .7em;
+        }
+        .credit {
+            font-size: .5em;
+        }
+    }
+}

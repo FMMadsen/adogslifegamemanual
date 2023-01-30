@@ -1,0 +1,524 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{PageBrowserTitle}}</title>
+    <meta name="description" content="{{PageBrowserTitle}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/dist/css/normalize.css">
+    <link rel="stylesheet" href="/dist/css/boilerplate.css">
+    <link rel="stylesheet" href="/dist/css/gridlex.css">
+    <link rel="stylesheet" href="/dist/css/base.css">
+    <link rel="stylesheet" href="/dist/css/page.css">
+    <link rel="stylesheet" href="/dist/css/frontpage.css">
+    <link rel="stylesheet" href="/dist/css/containers.css">
+    <link rel="stylesheet" href="/dist/css/texts.css">
+    <link rel="stylesheet" href="/dist/css/images.css">
+
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+    <header>
+        <div class="page">
+            <div id="top-left-corner-ribbon">
+                <img src="/img/Top-left-corner-red-ribbon.png" alt="Ribbon image">
+                <div id="ribbon-text">{{FrontPage.RibbonText}}</div>
+            </div>
+            <section>
+                <h1>{{FrontPage.Title}}</h1>
+                <h2>{{FrontPage.SubTitle}}</h2>
+                <div class="grid-bottom-noBottom feature-row">
+                    <div class="col-2">
+                        <span class="feature-text-main">2-6</span><span class="feature-text-sub">{{FrontPage.Players}}</span>
+                    </div>
+                    <div class="col-2">
+                        <span class="feature-text-main">40</span><span class="feature-text-sub">{{FrontPage.GameTimeUnit}}</span>
+                    </div>
+                    <div class="col-2">
+                        <span class="feature-text-main">6+</span><span class="feature-text-sub">{{FrontPage.Age}}</span>
+                    </div>
+                    <div class="col-6">
+                        <div class="credit">{{FrontPage.GameBy}}</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <div class="page">
+            <section>
+                <h3>{{ S1.Title }}</h3>
+                {{ #S1.Paragraphs }}
+                <p>{{Text}}</p>
+                {{ /S1.Paragraphs }}
+                <h3>{{ S2.Title }}</h3>
+                <div class="grid-2">
+                    <div class="col">
+                        {{ #S2.GameContentColumn1 }}
+                        <strong>{{Number}}</strong> {{Item}}<br> {{ /S2.GameContentColumn1 }}
+                    </div>
+                    <div class="col">
+                        {{ #S2.GameContentColumn2 }}
+                        <strong>{{ Number }}</strong> {{ Item }}<br> {{ /S2.GameContentColumn2 }}
+                    </div>
+                </div>
+                <img class="img-1-5 right" src="/img/1-dog-with-newspaper-and-hat.png" alt="{{ S2.ImageAlt }}">
+                <h3>{{ S3.Title }}</h3>
+                <p>{{ S3.Text }}</p>
+                <h3>{{ S4.Title }}</h3>
+                <img class="img-1-1" src="/img/1-counters-bone.png" alt="{{ S4.Image1Alt }}">
+                <img class="img-1-2" src="/img/1-counters-newspaper.png" alt="{{ S4.Image2Alt }}">
+                <img class="img-1-3" src="/img/1-counters-trash.png" alt="{{ S4.Image3Alt }}">
+                <img class="img-1-4" src="/img/1-dog-catcher-car.png" alt="{{ S4.Image4Alt }}">
+                <p>{{ S4.Text1 }}</p>
+                <div class="image-row">
+                    <img class="img-1-6" src="/img/1-dog-card.png" alt="Dog card">
+                    <img class="img-1-7" src="/img/1-den-card.png" alt="Den card">
+                    <img class="img-1-8" src="/img/1-den-square.png" alt="Den square">
+                </div>
+                <img class="img-1-9 border" src="/img/1-9-action-cards.jpg" alt="Action cards">
+                <p>{{ S4.Text2BeforeImage }}<img class="img-1-8-xs" src="/img/1-den-square.png" alt="Den square">{{ S4.Text2AfterImage }}</p>
+                <img class="img-1-9-xs border" src="/img/1-9-action-cards.jpg" alt="Action cards">
+            </section>
+            <div class="page-footer">1</div>
+        </div>
+
+        <div class="page">
+            <section>
+                <h3>{{ S5.Title }}</h3>
+                <p>{{ S5.Text }}</p>
+                <h3>{{ S6.Title }}</h3>
+                <p>{{ S6.Text }}</p>
+                <ol>
+                    {{ #S6.Phases }}
+                    <li><strong>{{ Title }}</strong> {{ Description }}</li>
+                    {{ /S6.Phases }}
+                </ol>
+                <h4>{{ S6.Phase1.Title }}</h4>
+                <img class="img-2-1 border right" src="/img/2-hunger-counter.jpg" alt="{{ S6.Phase1.ImageAlt }}">
+                <p>{{ S6.Phase1.Text }}</p>
+                <h4>{{ S6.Phase2.Title }}</h4>
+                <p>{{ S6.Phase2.Text }}</p>
+                <h4>{{ S6.Phase2.MovementTitle }}</h4>
+                <p>{{ S6.Phase2.MovementText }}
+                    <img class="img-2-2 border right" src="/img/2-dog-movement.jpg" alt="{{ S6.Phase2.MovementImageAlt }}">
+                    <ul>
+                        {{ #S6.Phase2.MovementRules }}
+                        <li>{{ Description }}</li>
+                        {{ /S6.Phase2.MovementRules }}
+                    </ul>
+                </p>
+            </section>
+            <div class="page-footer">2</div>
+        </div>
+
+        <div class="page">
+            <section>
+                <h4>{{ S6.Phase2.BoardSquaresTitle }}</h4>
+                <div class="grid">
+                    <div class="col-6_xs-9">
+                        <h6>{{ S6.Phase2.BoardSquaresStreet.Title }}</h6>
+                        <div>{{ S6.Phase2.BoardSquaresStreet.Text }}</div>
+                    </div>
+                    <div class="col-6_xs-3 content-right">
+                        <img class="border img-3-board-square-types" src="/img/3-1-street.jpg" alt="Square types">
+                        <img class="border img-3-board-square-types-extras" src="/img/3-1-street-fountain.jpg" alt="Water fountain square">
+                        <img class="border img-3-board-square-types-extras" src="/img/3-1-street-light.jpg" alt="Street light square">
+                        <img class="border img-3-board-square-types-extras" src="/img/3-1-street-trash-can.jpg" alt="Trash can square">
+                    </div>
+                    <div class="col-7_xs-9">
+                        <h6>{{ S6.Phase2.BoardSquaresDen.Title }}</h6>
+                        <div>{{ S6.Phase2.BoardSquaresDen.Text }}</div>
+                    </div>
+                    <div class="col-5_xs-3 content-right">
+                        <img class="img-3-paw" src="/img/3-dog-paw-yellow-45.png" alt="Yellow paw">
+                        <img class="border img-3-board-square-types" src="/img/3-2-den.jpg" alt="Den square">
+                    </div>
+                    <div class="col-7_xs-9">
+                        <h6>{{ S6.Phase2.BoardSquaresRestaurent.Title }}</h6>
+                        <div>{{ S6.Phase2.BoardSquaresRestaurent.Text }}</div>
+                    </div>
+                    <div class="col-5_xs-3 content-right">
+                        <img class="img-3-paw" src="/img/3-dog-paw-red-45.png" alt="Red paw">
+                        <img class="border img-3-board-square-types" src="/img/3-3-restaurent.jpg" alt="Restaurent square">
+                    </div>
+                    <div class="col-7_xs-9">
+                        <h6>{{ S6.Phase2.BoardSquaresNewsStand.Title }}</h6>
+                        <div>{{ S6.Phase2.BoardSquaresNewsStand.Text }}</div>
+                    </div>
+                    <div class="col-5_xs-3 content-right">
+                        <img class="img-3-paw" src="/img/3-dog-paw-blue-45.png" alt="Blue paw">
+                        <img class="border img-3-board-square-types" src="/img/3-4-news-stand.jpg" alt="Newsstand square">
+                    </div>
+                    <div class="col-7_xs-9">
+                        <h6>{{ S6.Phase2.BoardSquaresDeliveryAddress.Title }}</h6>
+                        <div>{{ S6.Phase2.BoardSquaresDeliveryAddress.Text }}</div>
+                    </div>
+                    <div class="col-5_xs-3 content-right">
+                        <img class="img-3-paw" src="/img/3-dog-paw-green-45.png" alt="Green paw">
+                        <img class="border img-3-board-square-types" src="/img/3-5-delivery-address.jpg" alt="Delivery address square">
+                    </div>
+                    <div class="col-7_xs-9">
+                        <h6>{{ S6.Phase2.BoardSquaresDogShelter.Title }}</h6>
+                        <div>{{ S6.Phase2.BoardSquaresDogShelter.Text }}</div>
+                    </div>
+                    <div class="col-5_xs-3 content-right">
+                        <img class="img-3-paw" src="/img/3-dog-paw-black-45.png" alt="Black paw">
+                        <img class="border img-3-board-square-types" src="/img/3-6-dog-shelter.jpg" alt="Dog Shelter Square">
+                    </div>
+                </div>
+                <h4>{{ S6.Phase2.DogActions.Title }}</h4>
+                <div class="focus-box-blue">
+                    <h4>{{ S6.Phase2.DogActions.FocusBox1.Title1 }}</h4>
+                    <img class="img-3-7 border-black  right hide-on-xs" src="/img/x-action-card-charlie-back.jpg" alt="Action card">
+                    <img class="img-3-7 border-black  right" src="/img/x-action-card-charlie-front.jpg" alt="Action card">
+                    <p>{{ S6.Phase2.DogActions.FocusBox1.Text1 }}</p>
+                    <h4>{{ S6.Phase2.DogActions.FocusBox1.Title2 }}</h4>
+                    <p>{{ S6.Phase2.DogActions.FocusBox1.Text2 }}</p>
+                </div>
+            </section>
+            <div class="page-footer">3</div>
+        </div>
+
+        <div class="page">
+            <section>
+                <div class="focus-box-blue">
+                    <img class="img-4-1 border-black top-right hide-on-xs" src="/img/4-1-dog-card-romeo.jpg" alt="Dog card">
+                    <h4>{{ S6.Phase2.DogActions.FocusBox2.Title1 }}</h4>
+                    <p>{{ S6.Phase2.DogActions.FocusBox2.Text1 }}</p>
+                    <h4>{{ S6.Phase2.DogActions.FocusBox2.Title2 }}</h4>
+                    <p>{{ S6.Phase2.DogActions.FocusBox2.Text2 }}</p>
+                </div>
+                <div class="focus-box-blue top-space">
+                    <img class="img-4-2-1-a border-black hide-on-xs" src="/img/x-action-card-charlie-back.jpg" alt="Action card">
+                    <img class="img-4-2-1-b border-black hide-on-xs" src="/img/x-action-card-charlie-front.jpg" alt="Action card">
+                    <div class="text-area-right">
+                        <h4>{{ S6.Phase2.DogActions.FocusBox3.Title1 }}<br />{{ S6.Phase2.DogActions.FocusBox3.Title2 }}</h4>
+                        <p>{{ S6.Phase2.DogActions.FocusBox3.Text }}</p>
+                        <img class="img-4-2-2" src="/img/4-2-action-card-reward-bone.jpg" alt="Action card reward: Bone">
+                        <img class="img-4-2-2" src="/img/4-2-action-card-reward-food-1.jpg" alt="Action card reward: 1 days food">
+                        <img class="img-4-2-2" src="/img/4-2-action-card-reward-food-2.jpg" alt="Action card reward: 2 days food">
+                        <img class="img-4-2-2" src="/img/4-2-action-card-reward-food-3.jpg" alt="Action card reward: 3 days food">
+                        <img class="img-4-2-2" src="/img/4-2-action-card-reward-nothing.jpg" alt="Action card reward: Nothing">
+                    </div>
+                </div>
+                <div class="img-4-3-container">
+                    <div class="first">
+                        <img class="img-4-3-1 border-black" src="/img/4-3-1-search-the-trash.jpg" alt="searching trash image" />
+                    </div>
+                    <div class="second">
+                        <img class="img-4-3-2 border" src="/img/4-3-2-trashcan.png" alt="Trash can" />
+                        <img class="img-4-3-3 border" src="/img/4-3-2-trashcan.png" alt="Trash can" />
+                        <img class="img-4-3-4" src="/img/counter-trash-can.png" alt="Trashcounter" />
+                    </div>
+                </div>
+                <h5>{{ S6.Phase2.DogActions.Search.Title }}</h5>
+                {{ #S6.Phase2.DogActions.Search.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S6.Phase2.DogActions.Search.Texts }}
+                <h5>{{ S6.Phase2.DogActions.Cleaning.Title }}</h5>
+                <p>{{ &S6.Phase2.DogActions.Cleaning.Text }}</p>
+                <h5 class="hide-on-non-xs">{{ S6.Phase2.DogActions.Begging.Title }}</h5>
+                <div class="img-4-4-container">
+                    <img class="img-4-4-1" src="/img/4-4-begging-in-restaurents.png" alt="restaurents" />
+                    <img class="img-4-4-2 border-black" src="/img/4-4-2-action-card-charlie-restaurent.jpg" alt="begging in restaurents" />
+                    <img class="img-4-4-3" src="/img/3-dog-paw-red-45.png" alt="red paw" />
+                </div>
+                <h5 class="hide-on-xs">{{ S6.Phase2.DogActions.Begging.Title }}</h5>
+                <p>{{ &S6.Phase2.DogActions.Begging.Text }}</p>
+                <div class="clear"></div>
+                <div class="top-right image-box">
+                    <img class="img-4-5-1 border" src="/img/4-5-obtaining-a-newspaper.png" alt="newsstand" />
+                    <img class="img-4-5-2" src="/img/3-dog-paw-blue-45.png" alt="blue paw" />
+                    <img class="img-4-5-3" src="/img/counter-newspaper.png" alt="newspaper counter" />
+                </div>
+                <h5>{{ S6.Phase2.DogActions.GetNewspaper.Title }}</h5>
+                {{ #S6.Phase2.DogActions.GetNewspaper.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S6.Phase2.DogActions.GetNewspaper.Texts }}
+            </section>
+            <div class="page-footer">4</div>
+        </div>
+        <div class="page">
+            <section>
+                <h5>{{ S6.Phase2.DogActions.DeliverNewspaper.Title }}</h5>
+                <div class="img-5-1-container">
+                    <div class="column">
+                        <img class="img-5-1-1" src="/img/3-dog-paw-blue-45.png" alt="green paw" />
+                        <img class="img-5-1-2" src="/img/counter-newspaper-back.png" alt="newspaper counter back" />
+                        <img class="img-5-1-3" src="/img/counter-newspaper.png" alt="newspaper counter front" />
+                    </div>
+                    <div class="column"><img class="img-5-1-4 border-black" src="/img/5-1-action-card-charlie-front-delivery.jpg" alt="action card charlie" /></div>
+                    <div class="column"><img class="img-5-1-5 border" src="/img/5-1-delivery-newspaper-12.png" alt="delivery address" /></div>
+                </div>
+                <p>{{ &S6.Phase2.DogActions.DeliverNewspaper.Text }}</p>
+                <div class="clear"></div>
+                <h5 class="hide-on-non-xs">{{ S6.Phase2.DogActions.Drink.Title }}</h5>
+                <div class="img-5-2-container">
+                    <img class="img-5-2-1 border" src="/img/5-2-1-dog-card-bladder.png" alt="dog card bladder" />
+                    <img class="img-5-2-2 border" src="/img/5-2-2-foundtain.png" alt="water fountain" />
+                    <img class="img-5-2-3" src="/img/piddle-counter-double.png" alt="piddle counters" />
+                </div>
+                <h5 class="hide-on-xs">{{ S6.Phase2.DogActions.Drink.Title }}</h5>
+                <p>{{ &S6.Phase2.DogActions.Drink.Text }}</p>
+                <div class="clear"></div>
+                <h5>{{ S6.Phase2.DogActions.LampPost.Title }}</h5>
+                <div class="top-right image-box">
+                    <div>
+                        <img class="img-5-3-1 border" src="/img/5-2-1-dog-card-bladder.png" alt="dog card bladder" />
+                    </div>
+                    <div>
+                        <img class="img-5-3-2 border" src="/img/lamp-post.png" alt="lamp post" />
+                        <img class="img-5-3-3 border" src="/img/lamp-post.png" alt="lamp post" />
+                        <img class="img-5-3-4" src="/img/piddle-counter.png" alt="piddle counter" />
+
+                    </div>
+                </div>
+                {{ #S6.Phase2.DogActions.LampPost.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S6.Phase2.DogActions.LampPost.Texts }}
+                <div class="focus-box-wrapper-5">
+                    <div class="focus-box-blue top-space">
+                        <img class="img-5-4-1-a border-black hide-on-xs" src="/img/x-action-card-charlie-back.jpg" alt="Action card">
+                        <img class="img-5-4-1-b border-black hide-on-xs" src="/img/x-action-card-charlie-front.jpg" alt="Action card">
+                        <div class="text-area-right">
+                            <img class="img-5-4-2" src="/img/black-dog-paw-3.png" alt="Fight result 3 paw">
+                            <img class="img-5-4-2" src="/img/black-dog-paw-2.png" alt="Fight result 2 paws">
+                            <img class="img-5-4-2" src="/img/black-dog-paw-1.png" alt="Fight result 1 paws">
+                            <h4>{{ S6.Phase2.DogActions.FocusBox4.Title1 }}<br />{{ S6.Phase2.DogActions.FocusBox4.Title2 }}</h4>
+                            <p>{{ S6.Phase2.DogActions.FocusBox4.Text }}</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="right img-5-5-2 border-black" src="/img/5-5-action-card-charlie-front-fight.jpg" alt="Fight section on action card" />
+                <img class="right img-5-5-1" src="/img/black-dog-paw-1-transparent.png" alt="Black Paw" />
+                <h5>{{ S6.Phase2.DogActions.Fight.Title }}</h5>
+                {{ #S6.Phase2.DogActions.Fight.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S6.Phase2.DogActions.Fight.Texts }}
+            </section>
+            <div class="page-footer">5</div>
+        </div>
+        <div class="page">
+            <section>
+                <div class="flex-box bottom-space">
+                    <img class="img-6-1 border" src="/img/6-1-1-example-of-fight-1.png" alt="Two dogs on adjasent fields" />
+                    <img class="img-6-1 border" src="/img/6-1-2-example-of-fight-2.png" alt="Two action cards" />
+                </div>
+                <div class="flex-box bottom-space">
+
+                    <img class="img-6-1 border" src="/img/6-2-1-example-of-fight-3.png" alt="Dog is beaten and moves" />
+                    <img class="img-6-1 border" src="/img/6-2-2-example-of-fight-4.png" alt="Dog has stolen bone" />
+                </div>
+                <img class="img-6-3-2" src="/img/black-dog-paw-1-transparent.png" alt="Paw" />
+                <img class="img-6-3-1" src="/img/black-dog-paw-3-transparent.png" alt="Paws" />
+                <h6>{{ S6.Phase2.DogActions.FightExample.Title }}</h6>
+                {{ #S6.Phase2.DogActions.FightExample.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S6.Phase2.DogActions.FightExample.Texts }}
+                <img class="img-6-4-4 border" src="/img/6-3-2-dropping-from-mouth.png" alt="Bone dropped on street" />
+                <img class="img-6-4-3 border" src="/img/6-3-1-dropping-from-mouth.png" alt="Dog Card, mouth filled" />
+                <div class="right">
+                    <img class="img-6-4-1" src="/img/counter-bone.png" alt="Bone counter" />
+                    <img class="img-6-4-2" src="/img/counter-newspaper.png" alt="Newspaper counter" />
+                </div>
+                <h5>{{ S6.Phase2.DogActions.PickUp.Title }}</h5>
+                <p>{{ &S6.Phase2.DogActions.PickUp.Text }}</p>
+                <h5>{{ S6.Phase2.DogActions.Dropping.Title }}</h5>
+                <p>{{ &S6.Phase2.DogActions.Dropping.Text }}</p>
+                <div class="left image-box">
+                    <img class="img-6-5-1 border" src="/img/6-4-1-burying-bones.png" alt="Dog in Den" />
+                    <img class="img-6-5-2" src="/img/6-4-2-burying-bones.png" alt="Bone burried in Den" />
+                </div>
+                <h5>{{ S6.Phase2.DogActions.Burry.Title }}</h5>
+                {{ #S6.Phase2.DogActions.Burry.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S6.Phase2.DogActions.Burry.Texts }}
+            </section>
+            <div class="page-footer">6</div>
+        </div>
+        <div class="page">
+            <section>
+                <h6>{{ S6.Phase2.DogActions.DogPhaseExample.Title }}</h6>
+                <img class="img-7-1" src="/img/7-1-bella-dog-card.png" alt="Dog card, Bella" /> {{ #S6.Phase2.DogActions.DogPhaseExample.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S6.Phase2.DogActions.DogPhaseExample.Texts }}
+                <div class="flex-box">
+                    <img class="img-7-2" src="/img/7-2-1.png" alt="Puddle in Den square" />
+                    <img class="img-7-2" src="/img/7-2-2.png" alt="Puddle moves to restaurent" />
+                    <img class="img-7-2" src="/img/7-2-3.png" alt="Puddle is outside restaurent" />
+                    <img class="img-7-2" src="/img/7-2-4.png" alt="Puddle moved inside restaurent" />
+                </div>
+                <img class="img-7-3" src="/img/7-3-dog-catchers-car.png" alt="The Dog Catchers car" />
+                <h4>{{ S6.Phase3.Title }}</h4>
+                {{ #S6.Phase3.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S6.Phase3.Texts }}
+                <div class="left image-box">
+                    <img class="img-7-4-1 border" src="/img/7-4-1-shelter.png" alt="Dog Shelter" />
+                    <img class="img-7-4-2 border-black" src="/img/7-4-2-action-card-charlie-dog-catcher.jpg" alt="Action card Charlie with dog catchers section" />
+                </div>
+                <h5>{{ S6.Phase3.Caught.Title }}</h5>
+                {{ #S6.Phase3.Caught.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S6.Phase3.Caught.Texts }}
+            </section>
+            <div class="page-footer">7</div>
+        </div>
+        <div class="page">
+            <section>
+                <div class="flex-box bottom-space">
+                    <img class="img-8-1 border" src="/img/8-1-1-movement.jpg" alt="Dog catchers movement" />
+                    <img class="img-8-1 border" src="/img/8-1-2-shelter.jpg" alt="Dog Shelter" />
+                </div>
+                <img class="img-8-2 border" src="/img/8-2-action-cards.jpg" alt="Action cards, Charlie and Max" />
+                <h6>{{ S6.Phase3.Example1.Title }}</h6>
+                <p>{{ S6.Phase3.Example1.Text }}</p>
+                <div class="focus-box-blue top-double-space">
+                    <img class="img-4-2-1-a border-black hide-on-xs" src="/img/x-action-card-charlie-back.jpg" alt="Action card">
+                    <img class="img-4-2-1-b border-black hide-on-xs" src="/img/x-action-card-charlie-front.jpg" alt="Action card">
+                    <div class="text-area-right">
+                        <h4>{{ S6.Phase3.FocusBox.Title }}</h4>
+                        <div class="grid-noBottom">
+                            <div class="col-6">
+                                <img class="img-8-3-icon" src="/img/8-3-dog-catcher-result-catched.png" alt="Action Card Dog Catcher: Catched">
+                                <img class="img-8-3-icon" src="/img/8-3-dog-catcher-result-escaped.png" alt="Action Card Dog Catcher: Escaped">
+                                <p class="no-bottom">{{ S6.Phase3.FocusBox.TextLeft }}</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-8-3-icon" src="/img/8-3-escape-shelter-result-catched.png" alt="Action Card Escape Shelter: Catched">
+                                <img class="img-8-3-icon" src="/img/8-3-escape-shelter-result-escaped.png" alt="Action Card Escape Shelter: Escaped">
+                                <p class="no-bottom">{{ S6.Phase3.FocusBox.TextRight }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h5>{{ S6.Phase3.IntoShelter.Title }}</h5>
+                <p>{{ S6.Phase3.IntoShelter.Text }}</p>
+                <img class="img-8-4 border-black" src="/img/8-4-action-card-charlie-front-shelter.png" alt="Action Card, Charlie" />
+                <h5>{{ S6.Phase3.LeaveShelter.Title }}</h5>
+                {{ #S6.Phase3.LeaveShelter.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S6.Phase3.LeaveShelter.Texts }}
+            </section>
+            <div class="page-footer">8</div>
+        </div>
+        <div class="page">
+            <section>
+                <div class="flex-box bottom-space">
+                    <img class="img-9-1 border" src="/img/9-1-1-shelter.png" alt="Dog Shelter" />
+                    <img class="img-9-1 border" src="/img/9-1-2-action-cards.png" alt="Action cards" />
+                    <img class="img-9-1 border" src="/img/9-1-3-movement.png" alt="Dog moves out of Shelter" />
+                </div>
+                <img class="img-9-2" src="/img/9-2-dog-card-romeo.png" alt="Romeo Boxer Dog Card" />
+                <h6>{{ S6.Phase3.Example2.Title }}</h6>
+                {{ #S6.Phase3.Example2.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S6.Phase3.Example2.Texts }}
+                <div class="image-box">
+                    <img class="img-9-3 img-9-3-a" src="/img/counter-bone.png" alt="Bone counter" />
+                    <img class="img-9-3 img-9-3-b" src="/img/counter-bone.png" alt="Bone counter" />
+                    <img class="img-9-3 img-9-3-c" src="/img/counter-bone.png" alt="Bone counter" />
+                    <img class="img-9-3 img-9-3-d" src="/img/counter-bone.png" alt="Bone counter" />
+                </div>
+                <h3>{{ S7.Title }}</h3>
+                <h4>{{ S7.ExtendedGame.Title }}</h4>
+                <p>{{ S7.ExtendedGame.Text }}</p>
+                <h4>{{ S7.Experienced.Title }}</h4>
+                {{ #S7.Experienced.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S7.Experienced.Texts }}
+                <img class="img-9-4" src="/img/9-woman-and-dog.png" alt="Woman with dog" />
+                <h4>{{ S7.Packs.Title }}</h4>
+                {{ #S7.Packs.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S7.Packs.Texts }}
+                <h4>{{ S7.Pairs.Title }}</h4>
+                {{ #S7.Pairs.Texts }}
+                <p>{{ &p }}</p>
+                {{ /S7.Pairs.Texts }}
+            </section>
+            <div class="page-footer">9</div>
+        </div>
+        <div class="page">
+            <section>
+                <h3>{{ S8.Title }}</h3>
+                <div class="big-space-box">
+                    <img class="img-10-right" src="/img/10-1-dog-max-the-german-shepherd.png" alt="Max the German Shepherd" />
+                    <h4>{{ S8.Max.Title }}</h4>
+                    <p><i>{{ S8.Max.Text }}</i></p>
+                </div>
+                <div class="big-space-box">
+                    <img class="img-10-left" src="/img/10-2-dog-bella-the-poodle.png" alt="Bella the Poodle" />
+                    <h4>{{ S8.Bella.Title }}</h4>
+                    <p><i>{{ S8.Bella.Text }}</i></p>
+                </div>
+                <div class="big-space-box">
+                    <img class="img-10-right" src="/img/10-3-dog-charlie-the-fox-terrier.png" alt="Charlie the Fox Terrier" />
+                    <h4>{{ S8.Charlie.Title }}</h4>
+                    <p><i>{{ S8.Charlie.Text }}</i></p>
+                </div>
+                <div class="big-space-box">
+                    <img class="img-10-left" src="/img/10-4-dog-buddy-the-labrador.png" alt="Buddy the Labrador" />
+                    <h4>{{ S8.Buddy.Title }}</h4>
+                    <p><i>{{ S8.Buddy.Text }}</i></p>
+                </div>
+                <div class="big-space-box">
+                    <img class="img-10-right" src="/img/10-5-dog-daisy-the-whippet.png" alt="Daisy the Whippet" />
+                    <h4>{{ S8.Daisy.Title }}</h4>
+                    <p><i>{{ S8.Daisy.Text }}</i></p>
+                </div>
+                <div class="big-space-box">
+                    <img class="img-10-left" src="/img/10-6-dog-romeo-the-boxer-smaller.png" alt="Romeo the Boxer" />
+                    <h4>{{ S8.Romeo.Title }}</h4>
+                    <p><i>{{ S8.Romeo.Text }}</i></p>
+                </div>
+            </section>
+            <div class="page-footer">10</div>
+        </div>
+        <div class="page">
+            <section>
+                <h3>{{ S9.Title }}</h3>
+                <ul>
+                    {{ #S9.Tips }}
+                    <li>{{ i }}</li>
+                    {{ /S9.Tips }}
+                </ul>
+                <img class="img-11" src="/img/11-dog-bailey-the-golden-retriver.png" alt="Baily the Golden Retriver" />
+                <h3>{{ S10.Title }}</h3>
+                <h4>{{ S10.WhyDogsPiddle.Title }}</h4>
+                <p>{{ S10.WhyDogsPiddle.Text }}</p>
+                <h4>{{ S10.WhyDogsBury.Title }}</h4>
+                <p>{{ S10.WhyDogsBury.Text }}</p>
+                <h4>{{ S10.DogsAndNewspaper.Title }}</h4>
+                <p>{{ S10.DogsAndNewspaper.Text }}</p>
+                <h4>{{ S10.RealDogShelters.Title }}</h4>
+                {{ #S10.RealDogShelters.Texts }}
+                <p>{{ p }}</p>
+                {{ /S10.RealDogShelters.Texts }}
+                <h3>{{ S11.Title }}</h3>
+                <p><strong>{{ S11.TextBeforeEmail }}<a href="mailto:{{ S11.Email }}">{{ S11.Email }}</a>{{ S11.TextAfterEmail }}</strong></p>
+            </section>
+            <div class="page-footer">11</div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="/dist/js/plugins.js"></script>
+    <script src="/dist/js/main.js"></script>
+</body>
+
+</html>

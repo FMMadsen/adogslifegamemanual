@@ -1,0 +1,105 @@
+@import 'variables';
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    // font-family: "KeepCalm";
+    font-family: 'Times New Roman';
+}
+
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $dark-red;
+}
+
+h6 {
+    color: $broken-red;
+}
+
+strong {
+    color: $dark-red;
+}
+
+ol>li {
+    list-style-type: none;
+}
+
+ul>li {
+    list-style-image: url("/img/ul-li-13.png");
+    padding-left: 0.4em;
+    margin: .5em 0 .5em 0;
+}
+
+h1 {
+    font-size: 6em;
+    line-height: 1.4;
+    font-weight: 800;
+    text-align: center;
+    margin: .2em 0 0 0;
+}
+
+h2 {
+    font-size: 3.5em;
+    line-height: 1.4;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-weight: 800;
+    margin: .3em 0;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-weight: 800;
+    margin: .8em 0;
+}
+
+h5 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 1em 0 1em 0;
+}
+
+h6 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.page-footer {
+    color: $black-ish;
+}
+
+.content-center {
+    text-align: center;
+}
+
+.content-right {
+    text-align: right;
+}
+
+@media all and (max-width: 48em) {
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media all and (max-width: 36em) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+}

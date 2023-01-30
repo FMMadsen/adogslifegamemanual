@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "KeepCalm";
+    src: url("/dist/fonts/KeepCalm-Heavy.otf") format("opentype"), url("/dist/fonts/KeepCalm-HeavyItalic.otf") format("opentype");
+}
+
+html {
+    font-size: 14px;
+    line-height: 1.4;
+    * {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    background-color: lightgrey;
+}
+
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#top-left-corner-ribbon {
+    position: absolute;
+    top: -20px;
+    left: -21px;
+    img {
+        width: 100%;
+    }
+    #ribbon-text {
+        font-family: KeepCalm;
+        position: absolute;
+        transform: rotate(-45deg);
+        text-align: center;
+        color: white;
+        top: 90px;
+        left: -30px;
+        width: 300px;
+        font-size: 1.8em;
+        line-height: 1.2em;
+    }
+}
+
+.hide-on-non-xs {
+    display: none;
+}
+
+@media all and (max-width: 48em) {
+    #top-left-corner-ribbon {
+        top: -16px;
+        left: -17px;
+        img {
+            width: 80%;
+        }
+        #ribbon-text {
+            top: 70px;
+            left: -30px;
+            width: 250px;
+            font-size: 1.4em;
+            line-height: 1.3em;
+        }
+    }
+}
+
+@media all and (max-width: 36em) {
+    .hide-on-xs {
+        display: none;
+    }
+    .hide-on-non-xs {
+        display: block;
+    }
+    #top-left-corner-ribbon {
+        top: -10px;
+        left: -11px;
+        img {
+            width: 50%;
+        }
+        #ribbon-text {
+            top: 44px;
+            left: -6px;
+            width: 130px;
+            font-size: 0.9em;
+            line-height: 1.3em;
+        }
+    }
+}
