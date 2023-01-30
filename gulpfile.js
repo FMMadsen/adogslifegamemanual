@@ -54,6 +54,32 @@ function generateHtmlDk() {
 }
 
 /********************************************
+ *  FILE COPY TASKS
+ ********************************************/
+const copyStaticFiles = parallel(copyNormalizeCss, copyBoilerplateCss, copyFonts, copyJavaScript);
+
+function copyNormalizeCss() {
+    return src('./style/vendor/normalize/**/*.css')
+        .pipe(flatten())
+        .pipe(dest('./dist/css'));
+}
+function copyBoilerplateCss() {
+    return src('./style/vendor/html5boilerplate/**/*.*')
+        .pipe(flatten())
+        .pipe(dest('./dist/css'));
+}
+function copyFonts() {
+    return src('./style/fonts/*.*')
+        .pipe(flatten())
+        .pipe(dest('./dist/fonts'));
+}
+function copyJavaScript() {
+    return src('./script/**/*.js')
+        .pipe(flatten())
+        .pipe(dest('./dist/js'));
+}
+
+/********************************************
  *  FILE REMOVE
  ********************************************/
 function cleanDist() {
@@ -75,7 +101,7 @@ function defaultTask(cb) {
 }
 
 exports.default = defaultTask;
-exports.build = series(cleanDist, parallel(generateHtml, transpileSass));
+exports.build = series(cleanDist, parallel(generateHtml, transpileSass, copyStaticFiles));
 exports.webserver = startWebserver;
 exports.clean = cleanDist;
 exports.styles = transpileSass;
